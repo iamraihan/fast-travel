@@ -14,27 +14,25 @@ const AppTabs = ({ callback, isInitialLoading, tabData = [] }) => {
 
   return (
     <>
-      <div className="">
-        <div className=" flex flex-wrap text-center">
-          {tabData.map((tab, index) => (
-            <button
-              type="button"
-              key={tab.id}
-              className={`  ${
-                index === activeTab ? "text-dark " : " text-white"
-              } rounded-md`}
-              onClick={() => tab.content && handleActiveTab(index, tab)}
+      <div className=" inline-flex items-center">
+        {tabData.map((tab, index) => (
+          <button
+            type="button"
+            key={tab.id}
+            className={`  ${
+              index === activeTab ? "text-dark " : " text-white"
+            } rounded-md`}
+            onClick={() => tab.content && handleActiveTab(index, tab)}
+          >
+            <span
+              className={`px-4 py-3 lg:py-4 text-dark cursor-pointer ${
+                index === activeTab ? " bg-white" : "bg-neutral/20"
+              } flex items-center text-xs lg:text-base`}
             >
-              <span
-                className={`px-4 py-3 lg:py-4 text-dark cursor-pointer ${
-                  index === activeTab ? " bg-white" : "bg-neutral/20"
-                } flex items-center text-xs lg:text-base`}
-              >
-                {tab.label}
-              </span>
-            </button>
-          ))}
-        </div>
+              {tab.label}
+            </span>
+          </button>
+        ))}
       </div>
       <div>
         {

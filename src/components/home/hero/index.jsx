@@ -1,5 +1,7 @@
 import { AppTab } from "@/helpers/ui";
 import { HotelIcon, RedFlightIcon } from "@/helpers/ui/customSVG";
+import FlightTab from "@/components/home/hero/FlightTab";
+import HotelTab from "@/components/home/hero/HotelTab";
 
 const Hero = () => {
   const myTabs = [
@@ -13,7 +15,7 @@ const Hero = () => {
           Flights
         </div>
       ),
-      content: <p>Content of Tab 1</p>,
+      content: <FlightTab />,
     },
     {
       id: 2,
@@ -25,7 +27,7 @@ const Hero = () => {
           Hotels
         </div>
       ),
-      content: <p>Content of Tab 2</p>,
+      content: <HotelTab />,
     },
   ];
   const handleTabClick = (tab) => {
@@ -40,9 +42,7 @@ const Hero = () => {
       }}
     >
       <div className="container mx-auto py-10">
-        <div className=" p-6 mb-16 shadow-md rounded-b-2xl rounded-tr-2xl bg-white search-box-1">
-          <div className="inline-flex items-center"></div>
-
+        <div className="">
           <AppTab
             id="flight-tab"
             tabData={myTabs}
