@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .flight-search .ant-select-arrow {
+  display: none !important;
+} */
+.flight-search .ant-select-selector {
+  border: 0 !important;
+  background: #f8f8f8;
+}
