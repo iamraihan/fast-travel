@@ -19,7 +19,7 @@ const AppTabs = ({
 
   return (
     <>
-      <div className={`inline-flex ${variant === "primary" ? "" : "gap-2"}`}>
+      <div className={`flex ${variant === "primary" ? "" : "gap-2"}`}>
         {tabData.map((tab, index) =>
           variant === "primary" ? (
             <button
@@ -58,7 +58,7 @@ const AppTabs = ({
           )
         )}
       </div>
-      <div>
+      <div className="w-full">
         {
           !isInitialLoading ? tabData[activeTab].content : ""
           //   <AppNothingToShow loading={isInitialLoading} />
