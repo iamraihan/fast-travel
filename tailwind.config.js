@@ -19,6 +19,8 @@ export default {
     extend: {
       colors: {
         "neutral/20": "#dad6c7",
+        red: "#bb2a2f",
+        gray: "#f8f8f8",
       },
     },
   },

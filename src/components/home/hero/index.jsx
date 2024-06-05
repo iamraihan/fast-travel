@@ -1,7 +1,7 @@
 import { AppTab } from "@/helpers/ui";
 import { HotelIcon, RedFlightIcon } from "@/helpers/ui/customSVG";
-import FlightTab from "@/components/home/hero/FlightTab";
-import HotelTab from "@/components/home/hero/HotelTab";
+import FlightTab from "@/components/home/hero/flight-tab/index";
+import HotelTab from "@/components/home/hero/hotel-tab/index";
 
 const Hero = () => {
   const myTabs = [
