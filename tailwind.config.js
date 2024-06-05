@@ -16,7 +16,11 @@ export default {
         xl: "1rem",
       },
     },
-    extend: {},
+    extend: {
+      colors: {
+        "neutral/20": "#dad6c7",
+      },
+    },
   },
   plugins: [],
 };
