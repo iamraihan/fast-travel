@@ -16,13 +16,7 @@ export default {
         xl: "1rem",
       },
     },
-    extend: {
-      backgroundImage: {
-        flightBg: url(
-          "https://habgs-content.s3.ap-south-1.amazonaws.com/habgs-partners-banners/default-image/default_image-8.png"
-        ),
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
